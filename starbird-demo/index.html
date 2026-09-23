@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Starbird Demo Cheat Sheet</title>
+<meta name="robots" content="noindex">
+<style>
+:root{
+  color-scheme:light dark;
+  --bg:#F5F6F8; --card:#FFFFFF; --ink:#18212B; --muted:#5B6773; --rule:#DEE3E8; --accent:#0B6E78; --warn:#8A4B06; --warn-bg:#FFF4E5;
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#0F151B; --card:#171F27; --ink:#E6EBF0; --muted:#95A3AF; --rule:#27323C; --accent:#5CC4CD; --warn:#F0A95E; --warn-bg:#2A1F12;}
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  padding:max(16px,env(safe-area-inset-top)) max(16px,env(safe-area-inset-right)) max(40px,env(safe-area-inset-bottom)) max(16px,env(safe-area-inset-left))}
+main{max-width:44rem;margin:0 auto}
+h1{font-size:1.6rem;line-height:1.2;margin:.5rem 0 .25rem}
+.sub{color:var(--muted);margin:0 0 1.5rem;font-size:.95rem}
+h2{font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin:2rem 0 .5rem}
+ol{list-style:none;margin:0;padding:0;background:var(--card);border:1px solid var(--rule);border-radius:10px}
+li{display:grid;grid-template-columns:2.25rem 1fr;gap:0 .5rem;padding:.8rem 1rem .8rem .75rem;border-top:1px solid var(--rule)}
+li:first-child{border-top:0}
+.n{font-weight:700;color:var(--muted);font-variant-numeric:tabular-nums;text-align:right}
+.do{margin:0;font-weight:600}
+.see{margin:.25rem 0 0;color:var(--muted)}
+.see::before{content:"→ ";color:var(--accent);font-weight:700}
+code{font:600 .9em ui-monospace,"SF Mono",Menlo,Consolas,monospace;background:var(--bg);border:1px solid var(--rule);border-radius:4px;padding:0 .3em;overflow-wrap:anywhere}
+.watch{margin-top:2rem;background:var(--warn-bg);border-radius:10px;padding:.9rem 1.1rem}
+.watch h2{color:var(--warn);margin:0 0 .4rem}
+.watch ul{margin:0;padding-left:1.1rem}
+.watch li{display:list-item;padding:.15rem 0;border:0}
+footer{margin-top:2rem;color:var(--muted);font-size:.85rem}
+@media (min-width:48rem){
+  body{font-size:18px}
+  h1{font-size:2rem}
+  li{grid-template-columns:2.75rem 1fr;padding:.9rem 1.25rem .9rem 1rem}
+}
+</style>
+</head>
+<body>
+<main>
+<h1>Starbird demo cheat sheet</h1>
+<p class="sub">Soft Serve onboarding demo. Chrome, light mode, window 1280px or wider.</p>
+
+<h2>Get in</h2>
+<ol start="1">
+<li><span class="n">1</span><div><p class="do">Open soft-serve-admin.displai.ai in Chrome.</p><p class="see">Login page.</p></div></li>
+<li><span class="n">2</span><div><p class="do">Sign in with Google (@displai.ai).</p><p class="see">Menus list, in your own workspace.</p></div></li>
+<li><span class="n">3</span><div><p class="do">Account menu (top right) → Reset Demo → Confirm.</p><p class="see">Toast with the number of items removed. Seeded Starbird menus and Lunch stay.</p></div></li>
+</ol>
+
+<h2>Import the brand</h2>
+<ol>
+<li><span class="n">4</span><div><p class="do">On Menus, click AI Assistant in the list header.</p><p class="see">Assistant opens into a new conversation.</p></div></li>
+<li><span class="n">5</span><div><p class="do">Look above the greeting.</p><p class="see">Card with a sample board on the Default theme, plus Import your brand / Keep the default.</p></div></li>
+<li><span class="n">6</span><div><p class="do">Click Import your brand.</p><p class="see">Assistant asks for the website.</p></div></li>
+<li><span class="n">7</span><div><p class="do">Type <code>starbirdchicken.com</code>, send.</p><p class="see">Within about 2 seconds: sample board in Starbird’s colours, the colours, fonts and logo it found with their source pages, and Use this theme / Import a different theme / Keep the default.</p></div></li>
+<li><span class="n">8</span><div><p class="do">Click Use this theme.</p><p class="see">Confirmation block with a tick box and a disabled Use this theme button.</p></div></li>
+<li><span class="n">9</span><div><p class="do">Tick the box, click Use this theme.</p><p class="see">“This is now your workspace theme,” then it asks about the menu.</p></div></li>
+</ol>
+
+<h2>Build the menu from the till</h2>
+<ol>
+<li><span class="n">10</span><div><p class="do">Type <code>A lunch menu for Demo. It is all in our Toast till.</code>, send.</p><p class="see">Read from Toast card (42 items, 10 categories), then it asks what to call the menu.</p></div></li>
+<li><span class="n">11</span><div><p class="do">Type <code>Lunch</code>, send, click Accept.</p><p class="see">Chat moves right and the canvas appears. Board shows 4 Sandwiches and 4 Tenders, with the item strip below.</p></div></li>
+<li><span class="n">12</span><div><p class="do">In the strip, tick Starbird 2.0 (the fifth sandwich).</p><p class="see">9 rows. “Too many items for screen: Add Screen” above the board, “Over capacity” below it.</p></div></li>
+<li><span class="n">13</span><div><p class="do">Flip Show the photographs.</p><p class="see">Photos appear beside the sandwiches.</p></div></li>
+<li><span class="n">14</span><div><p class="do">Type <code>wings</code> in Search items, then clear it. Flip Show the items off, then on.</p><p class="see">Strip filters but the boards don’t move. Items off collapses the strip; on brings it back.</p></div></li>
+<li><span class="n">15</span><div><p class="do">Click Add Screen.</p><p class="see">Two boards side by side; pills read 2 screens.</p></div></li>
+<li><span class="n">16</span><div><p class="do">Tenders block → Screen dropdown → Screen 2.</p><p class="see">Tenders move to board 2 as a whole block.</p></div></li>
+</ol>
+
+<h2>Change it, then go back</h2>
+<ol>
+<li><span class="n">17</span><div><p class="do">Type <code>Take the Tenders off the board.</code></p><p class="see">One board left, pill reads 1 screen. The strip may lag; trust the board.</p></div></li>
+<li><span class="n">18</span><div><p class="do">Type <code>Add the Salads.</code></p><p class="see">Salads land and the menu splits onto two screens by itself.</p></div></li>
+<li><span class="n">19</span><div><p class="do">Scroll up through the earlier replies.</p><p class="see">Each one has “Iteration N · Restore this version · Show.”</p></div></li>
+<li><span class="n">20</span><div><p class="do">Click Show on iteration 3.</p><p class="see">That draft opens in a popover.</p></div></li>
+<li><span class="n">21</span><div><p class="do">Close it, then Restore this version on iteration 3.</p><p class="see">“Your earlier draft is restored,” and the stage shows that draft.</p></div></li>
+<li><span class="n">22</span><div><p class="do">Click Portrait under Screen 1.</p><p class="see">Screen 1 goes portrait; Screen 2 stays landscape.</p></div></li>
+<li><span class="n">23</span><div><p class="do">Click Landscape, tick Seamless wall, drag Size, then click Fit.</p><p class="see">Gap and bezel go to zero, boards scale (never re-flow), Fit resets the size.</p></div></li>
+<li><span class="n">24</span><div><p class="do">Theme pill → No theme, then put it back.</p><p class="see">The template’s own look, then the brand again.</p></div></li>
+<li><span class="n">25</span><div><p class="do">Click Lock certain elements, then press Escape.</p><p class="see">Overlay opens; Escape closes it and leaves the assistant open.</p></div></li>
+</ol>
+
+<h2>Finish and see it on the wall</h2>
+<ol>
+<li><span class="n">26</span><div><p class="do">Finish and see the menu → Save to library (name is prefilled as Lunch).</p><p class="see">Menu page with both screens, and Preview · Where it plays · Publish in the header.</p></div></li>
+<li><span class="n">27</span><div><p class="do">Click Preview.</p><p class="see">All screens, the canvas controls and a Store picker.</p></div></li>
+<li><span class="n">28</span><div><p class="do">Set Screens to 3.</p><p class="see">Three frames; the third says “This menu does not reach a screen this far along.”</p></div></li>
+<li><span class="n">29</span><div><p class="do">Switch Screen 1 to Portrait.</p><p class="see">A real portrait composition.</p></div></li>
+<li><span class="n">30</span><div><p class="do">Back to 2 screens and Landscape, then drag Size all the way right.</p><p class="see">300%, the wall scrolls, type stays sharp.</p></div></li>
+<li><span class="n">31</span><div><p class="do">Click Fit.</p><p class="see">Both boards fit, with gap and bezel.</p></div></li>
+<li><span class="n">32</span><div><p class="do">Tick Seamless wall.</p><p class="see">One flush wall.</p></div></li>
+<li><span class="n">33</span><div><p class="do">Set Columns to 1.</p><p class="see">One big board per row.</p></div></li>
+<li><span class="n">34</span><div><p class="do">Open Theme, pick No theme.</p><p class="see">The template’s own look.</p></div></li>
+<li><span class="n">35</span><div><p class="do">Theme → Import a theme from a website → <code>starbirdchicken.com</code> → Use this theme → tick → confirm.</p><p class="see">Boards redraw on the brand.</p></div></li>
+</ol>
+
+<h2>Reset</h2>
+<ol>
+<li><span class="n">36</span><div><p class="do">Account menu → Reset Demo.</p><p class="see">Your work is gone; seeded content stays.</p></div></li>
+</ol>
+
+<section class="watch">
+<h2>Watch for</h2>
+<ul>
+<li>Chat says “did not answer in time”: send the same message again.</li>
+<li>One change per sentence in chat.</li>
+<li>Don’t say “on a second screen.” Use Add Screen and the Screen dropdown.</li>
+</ul>
+</section>
+
+<footer>From the Soft-serve Starbird Demo board walkthrough (v76), Wed 23 Sep 2026.</footer>
+</main>
+</body>
+</html>
