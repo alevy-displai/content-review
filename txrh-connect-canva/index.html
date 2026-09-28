@@ -312,7 +312,7 @@ main{padding:0 20px}
     <section id="flow2" class="flow" data-n="2">
       <h2>Disconnect</h2>
       <div class="step">
-        <div class="step-head"><span class="num">1</span><span class="step-text">Tap your name in the bottom left corner, then tap <b>Account Administration</b>.</span></div>
+        <div class="step-head"><span class="num">1</span><span class="step-text">Tap <b>☰</b>, then tap your name at the bottom of the menu, then tap <b>Account Administration</b>.</span></div>
         <button class="shot" type="button" data-key="f2s1" aria-label="Enlarge screenshot: Your name in the bottom left corner with the account menu open on Account Administration"><span class="fig" style="aspect-ratio:1.4051"><img data-asset="assets/canva/d1-name-then-account-administration.png" alt="Your name in the bottom left corner with the account menu open on Account Administration"><span class="hl" style="left:0.5%;top:82%;width:43%;height:17%"></span><span class="hl" style="left:45%;top:76.5%;width:47%;height:11%"></span><svg class="cur" style="left:90.5%;top:85.5%" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 3l7 17 2.5-7 7-2.5z" fill="#991A36" stroke="#fff" stroke-width="1.5" stroke-linejoin="round"/></svg></span></button>
       </div>
       <div class="step">
@@ -324,7 +324,7 @@ main{padding:0 20px}
         <button class="shot" type="button" data-key="f2s3" aria-label="Enlarge screenshot: Disconnect your Canva account confirmation dialog"><span class="fig" style="aspect-ratio:1.7373"><img data-asset="assets/canva/d3-confirm-disconnect.png" alt="Disconnect your Canva account confirmation dialog"><span class="hl" style="left:65.5%;top:53%;width:17%;height:14%"></span><svg class="cur" style="left:81%;top:65%" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 3l7 17 2.5-7 7-2.5z" fill="#991A36" stroke="#fff" stroke-width="1.5" stroke-linejoin="round"/></svg></span></button>
       </div>
     </section>
-    <p class="foot">Tap <b>Help</b> in the left sidebar for additional support.</p>
+    <p class="foot">Tap <b>☰</b>, then <b>Help</b> for additional support.</p>
   </main>
   <div id="lb" role="dialog" aria-modal="true" aria-label="Screenshot" hidden>
     <button type="button" class="lb-close" aria-label="Close"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><path d="M3 3l10 10M13 3 3 13"/></svg></button>
@@ -365,7 +365,7 @@ main{padding:0 20px}
     if(window.innerHeight+window.scrollY>=document.documentElement.scrollHeight-4)a=secs.length;
     setActive(a);
   }
-  window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+  window.addEventListener('scroll',onScroll,{passive:true});window.addEventListener('resize',onScroll);onScroll();
 
   // phone: lightbox showing the full screenshot with its callouts
   var lb=document.getElementById('lb'),stage=lb.querySelector('.lb-stage'),cur=null;
